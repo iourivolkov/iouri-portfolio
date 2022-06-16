@@ -1,6 +1,7 @@
 * {
   background-color: #a4a696;
 }
+/* NAVIGATION */
 
 .nav-links {
   font-family: "Futura", sans-serif;
@@ -42,4 +43,43 @@
 
 .contact {
   margin: 0 105px 0 0;
+}
+
+/* LANDING PAGE */
+
+.main-page {
+  font-family: "Futura", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 300px 0 0 0;
+}
+
+.landing-btn {
+  color: white;
+  font-family: "Futura", sans-serif;
+  width: 350px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 100px 0 200px 135px;
+}
+
+.landing-btn:hover {
+  background-color: white;
+  color: #a4a696;
+  transition: all 0.5s;
+}
+
+.landing-title {
+  font-size: 150px;
+  margin: 100px 0 -100px 135px;
+}
+
+.description {
+  font-size: 40px;
+  margin: 100px 0 -50px 135px;
 }
