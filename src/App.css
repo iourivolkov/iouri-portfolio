@@ -1,0 +1,45 @@
+* {
+  background-color: #a4a696;
+}
+
+.nav-links {
+  font-family: "Futura", sans-serif;
+  font-size: 15px;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resume {
+  border: 2px solid white;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.resume:hover {
+  background-color: white;
+  color: #a4a696;
+  transition: all 0.5s;
+}
+
+.work {
+  margin: 0 105px;
+}
+
+.contact {
+  margin: 0 105px 0 0;
+}
