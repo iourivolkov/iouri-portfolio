@@ -9,7 +9,9 @@ const Navigation = () => {
           <li className="about">ABOUT</li>
           <li className="work">WORK</li>
           <li className="contact">CONTACT</li>
-          <button className="resume">RESUME</button>
+          <a href="https://resume.creddle.io/resume/97btmd5nf85">
+            <button className="resume">RESUME</button>
+          </a>
         </section>
       </ul>
     </div>
