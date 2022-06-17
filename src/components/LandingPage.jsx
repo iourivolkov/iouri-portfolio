@@ -1,7 +1,7 @@
-const LandingPage = () => {
+const LandingPage = ({ mainTitle }) => {
   return (
     <div className="main-page">
-      <h1 className="landing-title">Hello 👋🏻</h1>
+      <h1 className="landing-title">{mainTitle}</h1>
       <p className="description">
         I am Iouri - a{" "}
         <b>

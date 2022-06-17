@@ -76,10 +76,21 @@
 
 .landing-title {
   font-size: 150px;
-  margin: 100px 0 -100px 135px;
+  margin: 100px 0 -100px 125px;
 }
 
 .description {
   font-size: 40px;
   margin: 100px 0 -50px 135px;
+}
+.about-heading {
+  font-family: "Futura", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1300px 0 135px;
+  color: white;
+}
+
+.about-title {
+  font-size: 50px;
 }
