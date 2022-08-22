@@ -22,7 +22,8 @@ const LandingPage = ({ title, subtitle }) => {
       <Typography
         sx={{
           textAlign: "center",
-          fontFamily: "Futura",
+          fontFamily: "Figtree",
+          fontWeight: 400,
           color: "#FF7575",
           fontSize: "64px",
         }}
@@ -33,7 +34,8 @@ const LandingPage = ({ title, subtitle }) => {
       <Typography
         sx={{
           textAlign: "center",
-          fontFamily: "Futura",
+          fontFamily: "Figtree",
+          fontWeight: 100,
           color: "#FF7575",
           fontSize: "24px",
         }}
@@ -46,6 +48,9 @@ const LandingPage = ({ title, subtitle }) => {
         variant="outlined"
         sx={{
           border: "3px solid #FF7575",
+          fontFamily: "Figtree",
+          fontWeight: 100,
+          fontSize: "16px",
           textTransform: "none",
           color: "#FF7575",
           borderRadius: "30px",
