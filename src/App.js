@@ -1,4 +1,5 @@
 import LandingPage from "../src/components/LandingPage";
+import About from "./components/About";
 
 const landingPage = {
   title: "Hello. I'm a full-stack developer.",
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <LandingPage title={landingPage.title} subtitle={landingPage.subtitle} />
+      <About />
     </div>
   );
 }
