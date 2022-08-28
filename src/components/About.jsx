@@ -1,4 +1,5 @@
-import { Stack, Typography, Button } from "@mui/material";
+import { Stack, Typography, Button, Grid, Box } from "@mui/material";
+import TechStack from "./TechStack";
 
 const About = () => {
   const downloadResume = (e) => {
@@ -14,25 +15,25 @@ const About = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "1050px",
+        marginTop: { xs: "400px", sm: "900px", md: "1050px" },
       }}
     >
       <Typography
         sx={{
-          textAlign: "center",
+          textAlign: "left",
           fontFamily: "Figtree",
-          fontSize: "40px",
+          fontSize: { xs: "30px", sm: "32px", md: "40px" },
         }}
       >
         👨🏻‍💻 About Me
       </Typography>
       <Typography
         sx={{
-          textAlign: "center",
+          textAlign: { xs: "left", sm: "left", md: "left" },
           fontFamily: "Figtree",
-          fontSize: "24px",
+          fontSize: { xs: "0.8em", sm: "1.2em", md: "1.8em" },
           fontWeight: 100,
-          maxWidth: "900px",
+          width: { xs: "450px", sm: "650px", md: "1000px" },
         }}
       >
         Earlier this year I graduated from Lighthouse Labs' Web Development
@@ -41,11 +42,11 @@ const About = () => {
       </Typography>
       <Typography
         sx={{
-          textAlign: "center",
+          textAlign: { xs: "left", sm: "left", md: "left" },
           fontFamily: "Figtree",
-          fontSize: "24px",
+          fontSize: { xs: "0.8em", sm: "1.2em", md: "1.8em" },
           fontWeight: 100,
-          maxWidth: "900px",
+          width: { xs: "450px", sm: "650px", md: "1000px" },
         }}
       >
         In my free time, I learn about Web 3.0, hone my photography skills, and
@@ -61,9 +62,10 @@ const About = () => {
           fontFamily: "Figtree",
           color: "#ff7575",
           border: "3px solid #ff7575",
-          width: "300px",
+          width: { xs: "200px", sm: "200px", md: "300px" },
           height: "60px",
           borderRadius: "30px",
+          textTransform: "none",
           "&:hover": {
             bgcolor: "#ff7575",
             color: "white",
@@ -73,21 +75,9 @@ const About = () => {
       >
         Download Resume
       </Button>
-      <Stack spacing={3} direction="row">
-        <Typography
-          sx={{
-            border: "2px solid lightGrey",
-            borderRadius: "15px",
-            color: "grey",
-            fontFamily: "Figtree",
-            height: "30px",
-            width: "150px",
-            textAlign: "center",
-          }}
-        >
-          Javascript
-        </Typography>
-      </Stack>
+      <br />
+      <TechStack />
+      <br />
     </Stack>
   );
 };

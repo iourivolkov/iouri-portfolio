@@ -8,7 +8,7 @@ const style = {
   transform: "translate(-50%, -50%)",
 };
 
-const LandingPage = ({ title, subtitle }) => {
+const LandingPage = ({ title, subtitle, heading }) => {
   return (
     <Stack
       sx={{
@@ -24,8 +24,20 @@ const LandingPage = ({ title, subtitle }) => {
           textAlign: "center",
           fontFamily: "Figtree",
           fontWeight: 400,
+          color: "#ff7575",
+          fontSize: { xs: "18px", sm: "20px", md: "24px" },
+          width: { xs: "500px", sm: "700px", md: "1300px" },
+        }}
+      >
+        {heading}
+      </Typography>
+      <Typography
+        sx={{
+          textAlign: "center",
+          fontFamily: "Figtree",
           color: "#FF7575",
-          fontSize: "64px",
+          fontSize: { xs: "32px", sm: "40px", md: "64px" },
+          fontWeight: "700",
         }}
       >
         {title}
@@ -37,7 +49,8 @@ const LandingPage = ({ title, subtitle }) => {
           fontFamily: "Figtree",
           fontWeight: 100,
           color: "#FF7575",
-          fontSize: "24px",
+          width: { xs: "400px", sm: "700px", md: "1000px" },
+          fontSize: { xs: "18px", sm: "20px", md: "24px" },
         }}
       >
         {subtitle}
@@ -56,7 +69,7 @@ const LandingPage = ({ title, subtitle }) => {
           borderRadius: "30px",
           width: "300px",
           height: "60px",
-          marginTop: "100px",
+          marginTop: { xs: "50px", sm: "75px", md: "100px" },
           "&:hover": {
             bgcolor: "#FF7575",
             color: "white",
@@ -74,7 +87,7 @@ const LandingPage = ({ title, subtitle }) => {
           borderRadius: 100,
           width: 60,
           height: 60,
-          marginTop: "75px",
+          marginTop: "95px",
           bgcolor: "#FF7575",
           color: "white",
           "&:hover": {
