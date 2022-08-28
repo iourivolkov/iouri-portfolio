@@ -1,16 +1,11 @@
-import { Stack, Typography, SvgIcon } from "@mui/material";
-import Javascript from "../SVGs/Javascript";
-import Css from "../SVGs/Css";
-import Html from "../SVGs/Html";
-import Node from "../SVGs/Node";
-import Express from "../SVGs/Express";
-import React from "../SVGs/React";
-import Sass from "../SVGs/Sass";
-import Firebase from "../SVGs/Firebase";
-import Mui from "../SVGs/Mui";
-import Postgres from "../SVGs/Postgres";
+import { Stack, Typography, Button } from "@mui/material";
 
 const About = () => {
+  const downloadResume = (e) => {
+    e.preventDefault();
+    window.location.href = "https://resume.creddle.io/resume/97btmd5nf85";
+  };
+
   return (
     <Stack
       spacing={2}
@@ -29,7 +24,7 @@ const About = () => {
           fontSize: "40px",
         }}
       >
-        About Me
+        👨🏻‍💻 About Me
       </Typography>
       <Typography
         sx={{
@@ -57,46 +52,41 @@ const About = () => {
         explore the city's food scene.
       </Typography>
       <br />
-      <Typography
+      <Button
+        disableElevation
+        disableRipple
+        onClick={downloadResume}
+        variant="outlined"
         sx={{
-          textAlign: "center",
           fontFamily: "Figtree",
-          fontSize: "40px",
+          color: "#ff7575",
+          border: "3px solid #ff7575",
+          width: "300px",
+          height: "60px",
+          borderRadius: "30px",
+          "&:hover": {
+            bgcolor: "#ff7575",
+            color: "white",
+            border: "none",
+          },
         }}
       >
-        My tech stack
-      </Typography>
+        Download Resume
+      </Button>
       <Stack spacing={3} direction="row">
-        <SvgIcon fontSize={"large"}>
-          <Javascript />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <Css />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <Html />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <Node />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <Express />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <React />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <Sass />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <Mui />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <Firebase />
-        </SvgIcon>
-        <SvgIcon fontSize={"large"}>
-          <Postgres />
-        </SvgIcon>
+        <Typography
+          sx={{
+            border: "2px solid lightGrey",
+            borderRadius: "15px",
+            color: "grey",
+            fontFamily: "Figtree",
+            height: "30px",
+            width: "150px",
+            textAlign: "center",
+          }}
+        >
+          Javascript
+        </Typography>
       </Stack>
     </Stack>
   );
