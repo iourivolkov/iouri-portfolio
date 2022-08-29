@@ -8,7 +8,7 @@ const Footer = () => {
         flexDirection: "column",
         justifyContent: "flex-start",
         alignItems: "center",
-        bgcolor: "#112f5c",
+        bgcolor: "black",
         color: "white",
         height: "300px",
       }}
@@ -16,12 +16,20 @@ const Footer = () => {
       <Typography
         sx={{
           fontFamily: "Figtree",
-          fontSize: "34px",
+          fontSize: "40px",
           fontWeight: 700,
-          marginTop: "20px",
+          marginTop: "30px",
         }}
       >
-        Let's get in touch!
+        Let's collaborate 🤝🏻
+      </Typography>
+      <Typography
+        sx={{
+          fontSize: "0.8em",
+          fontFamily: "Figtree",
+        }}
+      >
+        Feel free to contact me!
       </Typography>
       <Button
         disableElevation
@@ -30,25 +38,30 @@ const Footer = () => {
         sx={{
           fontFamily: "Figtree",
           width: "200px",
-          height: "60px",
-          bgcolor: "#ff7575",
-          color: "white",
+          height: "40px",
+          fontSize: "0.8em",
+          color: "#ff7575",
+          bgcolor: "transparent",
+          border: "2px solid #ff7575",
           marginTop: "20px",
           borderRadius: "30px",
           "&:hover": {
             bgcolor: "#ff7575",
+            color: "white",
+            border: "none",
           },
         }}
       >
-        Email me
+        email me
       </Button>
       <Typography
         sx={{
           marginTop: "80px",
           fontFamily: "Figtree",
+          marginBottom: "30px",
         }}
       >
-        iouri volkov 2022 all rights reserved
+        &#169; Iouri Volkov. All rights reserved.
       </Typography>
     </Box>
   );
