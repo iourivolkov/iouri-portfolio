@@ -1,5 +1,6 @@
 import LandingPage from "../src/components/LandingPage";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 const landingPage = {
   heading: "👋🏻 Hello! I'm Iouri, a ",
@@ -17,6 +18,7 @@ function App() {
         subtitle={landingPage.subtitle}
       />
       <About />
+      <Projects />
     </div>
   );
 }

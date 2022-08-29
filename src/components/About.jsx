@@ -15,7 +15,7 @@ const About = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: { xs: "400px", sm: "900px", md: "1050px" },
+        marginTop: { xs: "850px", sm: "950px", md: "1050px" },
       }}
     >
       <Typography

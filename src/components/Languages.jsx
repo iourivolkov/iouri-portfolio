@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Stack } from "@mui/material";
 
 const Languages = () => {
   return (
@@ -28,78 +28,80 @@ const Languages = () => {
           flexWrap: "wrap",
         }}
       >
-        <Typography
-          sx={{
-            fontFamily: "Figtree",
-            border: "2px solid #bdbdbd",
-            borderRadius: "30px",
-            color: " black",
-            width: { xs: "100px", sm: "120px", md: "120px" },
-            height: "40px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "20px",
-            marginBottom: "5px",
-            fontSize: { xs: "12px", sm: "16px", md: "16px" },
-          }}
-        >
-          Javascript
-        </Typography>
-        <Typography
-          sx={{
-            fontFamily: "Figtree",
-            border: "2px solid #bdbdbd",
-            borderRadius: "30px",
-            color: " black",
-            width: { xs: "100px", sm: "120px", md: "120px" },
-            height: "40px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "20px",
-            marginBottom: "5px",
-            fontSize: { xs: "12px", sm: "16px", md: "16px" },
-          }}
-        >
-          HTML
-        </Typography>
-        <Typography
-          sx={{
-            fontFamily: "Figtree",
-            border: "2px solid #bdbdbd",
-            borderRadius: "30px",
-            color: " black",
-            width: { xs: "100px", sm: "120px", md: "120px" },
-            height: "40px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "20px",
-            marginBottom: "5px",
-            fontSize: { xs: "12px", sm: "16px", md: "16px" },
-          }}
-        >
-          CSS
-        </Typography>
-        <Typography
-          sx={{
-            fontFamily: "Figtree",
-            border: "2px solid #bdbdbd",
-            borderRadius: "30px",
-            color: " black",
-            width: { xs: "100px", sm: "120px", md: "120px" },
-            height: "40px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "20px",
-            marginBottom: "5px",
-            fontSize: { xs: "12px", sm: "16px", md: "16px" },
-          }}
-        >
-          SCSS
-        </Typography>
+        <Stack spacing={2} direction="row">
+          <Typography
+            sx={{
+              fontFamily: "Figtree",
+              border: "2px solid #bdbdbd",
+              borderRadius: "30px",
+              color: " black",
+              width: { xs: "100px", sm: "120px", md: "120px" },
+              height: "40px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+
+              marginBottom: "5px",
+              fontSize: { xs: "12px", sm: "16px", md: "16px" },
+            }}
+          >
+            Javascript
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Figtree",
+              border: "2px solid #bdbdbd",
+              borderRadius: "30px",
+              color: " black",
+              width: { xs: "100px", sm: "120px", md: "120px" },
+              height: "40px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: "20px",
+              marginBottom: "5px",
+              fontSize: { xs: "12px", sm: "16px", md: "16px" },
+            }}
+          >
+            HTML
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Figtree",
+              border: "2px solid #bdbdbd",
+              borderRadius: "30px",
+              color: " black",
+              width: { xs: "100px", sm: "120px", md: "120px" },
+              height: "40px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: "20px",
+              marginBottom: "5px",
+              fontSize: { xs: "12px", sm: "16px", md: "16px" },
+            }}
+          >
+            CSS
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Figtree",
+              border: "2px solid #bdbdbd",
+              borderRadius: "30px",
+              color: " black",
+              width: { xs: "100px", sm: "120px", md: "120px" },
+              height: "40px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: "20px",
+              marginBottom: "5px",
+              fontSize: { xs: "12px", sm: "16px", md: "16px" },
+            }}
+          >
+            SCSS
+          </Typography>
+        </Stack>
       </Box>
     </Box>
   );

@@ -7,21 +7,36 @@ import Testing from "./Testing";
 const TechStack = () => {
   return (
     <>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid
-          container
-          spacing={{ xs: 2, md: 3 }}
-          columns={{ xs: 2, sm: 4, md: 8 }}
+      <Stack
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          width: { xs: "400px", sm: "500px", md: "1000px" },
+        }}
+      >
+        <Stack
+          spacing={2}
           sx={{
-            width: { xs: "500px", sm: "700px", md: "800px" },
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row", md: "row" },
           }}
         >
           <Languages />
           <Frameworks />
+        </Stack>
+        <Stack
+          spacing={2}
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row", md: "row" },
+          }}
+        >
           <Systems />
           <Testing />
-        </Grid>
-      </Box>
+        </Stack>
+      </Stack>
     </>
   );
 };
