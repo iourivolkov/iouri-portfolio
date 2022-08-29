@@ -8,12 +8,20 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
   };
   return (
     <>
-      <Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <Stack spacing={3}>
           <Typography
             sx={{
               fontFamily: "Figtree",
               fontWeight: "700",
+              width: { xs: "", sm: "", md: "" },
               fontSize: { xs: "18px", sm: "20px", md: "24px" },
             }}
           >
@@ -56,6 +64,17 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
             Github
           </Button>
         </Stack>
+        <Box
+          component="img"
+          sx={{
+            height: 233,
+            width: 350,
+            maxHeight: { xs: 223, md: 167 },
+            maxWidth: { xs: 350, md: 250 },
+          }}
+          alt="project screenshot"
+          src={screenshot}
+        />
       </Box>
     </>
   );

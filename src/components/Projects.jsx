@@ -1,6 +1,8 @@
 import { Typography, Stack, Box, Button } from "@mui/material";
 import ProjectItem from "./ProjectItem";
 import Card from "./Card";
+import arViewer from "../assets/arViewer.png";
+import weatherApp from "../assets/weatherApp.png";
 
 const projectsList = [
   {
@@ -9,7 +11,7 @@ const projectsList = [
       "A browser-based application built using React and Three.js, that allows users to try-on various articles of clothing via AR/VR.",
     projectStack: "Tech stack: React, Three.js, C#",
     projectLink: "https://www.ar.thecela.com/",
-    projectImage: "",
+    projectImage: arViewer,
   },
   {
     projectTitle: "weatherApp",
@@ -17,7 +19,7 @@ const projectsList = [
       "A simple weather tracking application built using React and Material UI.",
     projectStack: "Tech stack: React, Material UI, Netlify",
     projectLink: "https://verysimpleweatherapp.netlify.app/",
-    projectImage: "",
+    projectImage: weatherApp,
   },
 ];
 
