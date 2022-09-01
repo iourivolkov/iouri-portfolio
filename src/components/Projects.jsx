@@ -41,6 +41,7 @@ const Projects = () => {
           fontWeight: 700,
           textDecoration: "underline 3px solid #ff7575",
           textUnderlineOffset: 6,
+          marginTop: "60px",
           fontSize: { xs: "14px", sm: "16px", md: "20px" },
         }}
       >

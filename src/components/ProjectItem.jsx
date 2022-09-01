@@ -3,9 +3,10 @@ import { Box, Typography, Button, Stack } from "@mui/material";
 const ProjectItem = ({ title, description, stack, link, screenshot }) => {
   const projectPage = (e) => {
     e.preventDefault();
-    // window.location.href = projects.projectLink;
+    window.location.href = link;
     console.log("go to project link");
   };
+
   return (
     <>
       <Box
@@ -48,7 +49,7 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
             variant="outlined"
             sx={{
               border: "2px solid #ff7575",
-              width: { xs: "80px", sm: "125px", md: "150px" },
+              width: { xs: "120px", sm: "110px", md: "110px" },
               fontSize: { xs: "0.3em", sm: "1em", md: "0.8em" },
               borderRadius: "30px",
               color: "#ff7575",
@@ -61,7 +62,7 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
               },
             }}
           >
-            Github
+            Project link
           </Button>
         </Stack>
         <Box
