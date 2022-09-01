@@ -64,7 +64,7 @@ const LandingPage = ({ title, subtitle, heading }) => {
           fontFamily: "Figtree",
           fontWeight: 100,
           fontSize: "16px",
-          textTransform: "none",
+          textTransform: "uppercase",
           color: "#FF7575",
           borderRadius: "30px",
           width: "300px",

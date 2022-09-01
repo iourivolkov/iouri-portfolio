@@ -6,11 +6,11 @@ const Footer = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-start",
+        justifyContent: "center",
         alignItems: "center",
         bgcolor: "black",
         color: "white",
-        height: "300px",
+        height: "400px",
       }}
     >
       <Typography

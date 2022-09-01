@@ -20,13 +20,15 @@ const About = () => {
     >
       <Typography
         sx={{
-          textAlign: "left",
           fontFamily: "Figtree",
           fontSize: { xs: "30px", sm: "32px", md: "40px" },
+          textDecoration: "underline 3px solid #ff7575",
+          textUnderlineOffset: 6,
         }}
       >
         👨🏻‍💻 About Me
       </Typography>
+
       <Typography
         sx={{
           textAlign: { xs: "left", sm: "left", md: "left" },
@@ -66,7 +68,7 @@ const About = () => {
           width: { xs: "200px", sm: "200px", md: "300px" },
           height: "60px",
           borderRadius: "30px",
-          textTransform: "none",
+          textTransform: "uppercase",
           "&:hover": {
             bgcolor: "#ff7575",
             color: "white",
