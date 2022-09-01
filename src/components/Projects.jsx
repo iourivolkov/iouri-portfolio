@@ -1,8 +1,8 @@
-import { Typography, Stack, Box, Button } from "@mui/material";
+import { Typography, Stack } from "@mui/material";
 import ProjectItem from "./ProjectItem";
-import Card from "./Card";
 import arViewer from "../assets/arViewer.png";
 import weatherApp from "../assets/weatherApp.png";
+import scheduler from "../assets/scheduler.png";
 
 const projectsList = [
   {
@@ -20,6 +20,14 @@ const projectsList = [
     projectStack: "Tech stack: React, Material UI, Netlify",
     projectLink: "https://verysimpleweatherapp.netlify.app/",
     projectImage: weatherApp,
+  },
+  {
+    projectTitle: "Scheduler",
+    projectDescription:
+      "An interview scheduling application built using React and SCSS.",
+    projectStack: "React, SCSS",
+    projectLink: "https://github.com/iourivolkov/scheduler",
+    projectImage: scheduler,
   },
 ];
 
@@ -39,8 +47,14 @@ const Projects = () => {
         📎 Projects
       </Typography>
       <br />
-      <Card>
-        {/* <ProjectItem /> */}
+
+      {/* <ProjectItem /> */}
+      <Stack
+        spacing={4}
+        sx={{
+          marginBottom: "60px",
+        }}
+      >
         {projectsList.map((project) => (
           <ProjectItem
             title={project.projectTitle}
@@ -50,7 +64,7 @@ const Projects = () => {
             screenshot={project.projectImage}
           />
         ))}
-      </Card>
+      </Stack>
     </>
   );
 };

@@ -21,9 +21,11 @@ const About = () => {
       <Typography
         sx={{
           fontFamily: "Figtree",
-          fontSize: { xs: "30px", sm: "32px", md: "40px" },
+          fontWeight: 700,
+          fontSize: { xs: "14px", sm: "16px", md: "20px" },
           textDecoration: "underline 3px solid #ff7575",
           textUnderlineOffset: 6,
+          textTransform: "uppercase",
         }}
       >
         👨🏻‍💻 About Me
@@ -33,7 +35,7 @@ const About = () => {
         sx={{
           textAlign: { xs: "left", sm: "left", md: "left" },
           fontFamily: "Figtree",
-          fontSize: { xs: "0.8em", sm: "1.2em", md: "1.8em" },
+          fontSize: { xs: "0.8em", sm: "1.2em", md: "1.6em" },
           fontWeight: 100,
           width: { xs: "450px", sm: "650px", md: "1000px" },
         }}
@@ -46,7 +48,7 @@ const About = () => {
         sx={{
           textAlign: { xs: "left", sm: "left", md: "left" },
           fontFamily: "Figtree",
-          fontSize: { xs: "0.8em", sm: "1.2em", md: "1.8em" },
+          fontSize: { xs: "0.8em", sm: "1.2em", md: "1.6em" },
           fontWeight: 100,
           width: { xs: "450px", sm: "650px", md: "1000px" },
         }}

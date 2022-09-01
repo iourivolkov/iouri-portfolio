@@ -49,7 +49,7 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
             sx={{
               border: "2px solid #ff7575",
               width: { xs: "80px", sm: "125px", md: "150px" },
-              fontSize: { xs: "0.6em", sm: "1em", md: "1.2em" },
+              fontSize: { xs: "0.3em", sm: "1em", md: "0.8em" },
               borderRadius: "30px",
               color: "#ff7575",
               fontFamily: "Figtree",
