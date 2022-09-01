@@ -12,9 +12,9 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", sm: "row", md: "row" },
           justifyContent: "space-between",
-          alignItems: "center",
+          alignItems: { xs: "", sm: "center", md: "center" },
         }}
       >
         <Stack spacing={3}>
@@ -22,8 +22,7 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
             sx={{
               fontFamily: "Figtree",
               fontWeight: "700",
-              width: { xs: "", sm: "", md: "" },
-              fontSize: { xs: "18px", sm: "20px", md: "24px" },
+              fontSize: { xs: "24px", sm: "24px", md: "24px" },
             }}
           >
             {title}
@@ -31,6 +30,7 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
           <Typography
             sx={{
               fontFamily: "Figtree",
+              width: { xs: "350px", sm: "300px", md: "500px" },
             }}
           >
             {description}
@@ -38,8 +38,10 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
           <Typography
             sx={{
               fontFamily: "Figtree",
+              width: { xs: "150px", sm: "400px", md: "500px" },
             }}
           >
+            <b>Tech stack: </b>
             {stack}
           </Typography>
           <Button
@@ -49,12 +51,14 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
             variant="outlined"
             sx={{
               border: "2px solid #ff7575",
-              width: { xs: "120px", sm: "110px", md: "110px" },
-              fontSize: { xs: "0.3em", sm: "1em", md: "0.8em" },
+              height: { xs: "40px", sm: "40px", md: "40px" },
+              width: { xs: "120px", sm: "120px", md: "120px" },
+              fontSize: { xs: "0.8em", sm: "1em", md: "1em" },
               borderRadius: "30px",
               color: "#ff7575",
               fontFamily: "Figtree",
               textTransform: "uppercase",
+
               "&:hover": {
                 bgcolor: "#ff7575",
                 color: "white",
@@ -62,16 +66,18 @@ const ProjectItem = ({ title, description, stack, link, screenshot }) => {
               },
             }}
           >
-            Project link
+            link
           </Button>
+          <br />
+          <br />
         </Stack>
         <Box
           component="img"
           sx={{
             height: 233,
             width: 350,
-            maxHeight: { xs: 223, md: 167 },
-            maxWidth: { xs: 350, md: 250 },
+            height: { xs: 270, md: 167 },
+            width: { xs: 390, md: 250 },
           }}
           alt="project screenshot"
           src={screenshot}

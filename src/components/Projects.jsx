@@ -9,7 +9,7 @@ const projectsList = [
     projectTitle: "ArViewer",
     projectDescription:
       "A browser-based application built using React and Three.js, that allows users to try-on various articles of clothing via AR/VR.",
-    projectStack: "Tech stack: React, Three.js, C#",
+    projectStack: "React, Three.js, C#",
     projectLink: "https://www.ar.thecela.com/",
     projectImage: arViewer,
   },
@@ -17,7 +17,7 @@ const projectsList = [
     projectTitle: "weatherApp",
     projectDescription:
       "A simple weather tracking application built using React and Material UI.",
-    projectStack: "Tech stack: React, Material UI, Netlify",
+    projectStack: "React, Material UI, Netlify",
     projectLink: "https://verysimpleweatherapp.netlify.app/",
     projectImage: weatherApp,
   },
@@ -42,6 +42,7 @@ const Projects = () => {
           textDecoration: "underline 3px solid #ff7575",
           textUnderlineOffset: 6,
           marginTop: "60px",
+          marginLeft: "40px",
           fontSize: { xs: "14px", sm: "16px", md: "20px" },
         }}
       >
@@ -53,7 +54,7 @@ const Projects = () => {
       <Stack
         spacing={4}
         sx={{
-          marginBottom: "60px",
+          margin: "0 40px 60px 40px",
         }}
       >
         {projectsList.map((project) => (

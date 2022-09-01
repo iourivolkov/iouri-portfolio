@@ -1,4 +1,5 @@
 import { Box, Typography, Button } from "@mui/material";
+import "../components/footer.css";
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
         bgcolor: "black",
         color: "white",
         height: "400px",
+        width: "100%",
       }}
     >
       <Typography

@@ -37,7 +37,7 @@ const About = () => {
           fontFamily: "Figtree",
           fontSize: { xs: "0.8em", sm: "1.2em", md: "1.6em" },
           fontWeight: 100,
-          width: { xs: "450px", sm: "650px", md: "1000px" },
+          width: { xs: "380px", sm: "650px", md: "1000px" },
         }}
       >
         Earlier this year I graduated from Lighthouse Labs' Web Development
@@ -50,7 +50,7 @@ const About = () => {
           fontFamily: "Figtree",
           fontSize: { xs: "0.8em", sm: "1.2em", md: "1.6em" },
           fontWeight: 100,
-          width: { xs: "450px", sm: "650px", md: "1000px" },
+          width: { xs: "380px", sm: "650px", md: "1000px" },
         }}
       >
         In my free time, I learn about Web 3.0, hone my photography skills, and
@@ -68,7 +68,7 @@ const About = () => {
           color: "#ff7575",
           border: "3px solid #ff7575",
           width: { xs: "200px", sm: "200px", md: "300px" },
-          height: "60px",
+          height: { xs: "50px", sm: "50px", md: "60px" },
           borderRadius: "30px",
           textTransform: "uppercase",
           "&:hover": {

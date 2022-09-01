@@ -10,7 +10,7 @@ const TechStack = () => {
       <Stack
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column", sm: "column", md: "row" },
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
