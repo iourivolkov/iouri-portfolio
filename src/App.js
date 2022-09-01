@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 const landingPage = {
   heading: "👋🏻 Hello! I'm Iouri, a ",
-  title: "Full-Stack developer based in Toronto 📍",
+  title: "Front-end developer based in Toronto 📍",
   subtitle:
     "I design intuitive interfaces and produce clean code using modern web technologies.",
 };

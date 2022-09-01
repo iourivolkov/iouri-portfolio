@@ -25,7 +25,7 @@ const LandingPage = ({ title, subtitle, heading }) => {
           fontFamily: "Figtree",
           fontWeight: 400,
           color: "#ff7575",
-          fontSize: { xs: "18px", sm: "20px", md: "24px" },
+          fontSize: { xs: "16px", sm: "20px", md: "24px" },
           width: { xs: "500px", sm: "700px", md: "1300px" },
         }}
       >
@@ -36,7 +36,7 @@ const LandingPage = ({ title, subtitle, heading }) => {
           textAlign: "center",
           fontFamily: "Figtree",
           color: "#FF7575",
-          fontSize: { xs: "32px", sm: "40px", md: "64px" },
+          fontSize: { xs: "22px", sm: "36px", md: "64px" },
           fontWeight: "700",
         }}
       >
@@ -50,7 +50,7 @@ const LandingPage = ({ title, subtitle, heading }) => {
           fontWeight: 100,
           color: "#FF7575",
           width: { xs: "400px", sm: "700px", md: "1000px" },
-          fontSize: { xs: "18px", sm: "20px", md: "24px" },
+          fontSize: { xs: "16px", sm: "20px", md: "24px" },
         }}
       >
         {subtitle}

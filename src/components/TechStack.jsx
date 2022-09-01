@@ -10,31 +10,55 @@ const TechStack = () => {
       <Stack
         sx={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
+          flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          width: { xs: "400px", sm: "500px", md: "1000px" },
+          width: { xs: "2000px", sm: "1000px", md: "1000px" },
         }}
       >
         <Stack
-          spacing={2}
           sx={{
             display: "flex",
             flexDirection: { xs: "column", sm: "row", md: "row" },
           }}
         >
-          <Languages />
-          <Frameworks />
+          <Box
+            sx={{
+              marginRight: "40px",
+            }}
+          >
+            <Languages />
+          </Box>
+          <Box
+            sx={{
+              marginLeft: "40px",
+            }}
+          >
+            <Frameworks />
+          </Box>
         </Stack>
+        <br />
         <Stack
-          spacing={2}
           sx={{
             display: "flex",
             flexDirection: { xs: "column", sm: "row", md: "row" },
           }}
         >
-          <Systems />
-          <Testing />
+          <Box
+            sx={{
+              marginRight: "40px",
+            }}
+          >
+            <Systems />
+          </Box>
+          <Box
+            sx={{
+              marginLeft: "40px",
+            }}
+          >
+            <Testing />
+          </Box>
         </Stack>
       </Stack>
     </>

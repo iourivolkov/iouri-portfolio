@@ -53,6 +53,7 @@ const About = () => {
         explore the city's food scene.
       </Typography>
       <br />
+      <br />
       <Button
         disableElevation
         disableRipple
@@ -76,7 +77,10 @@ const About = () => {
         Download Resume
       </Button>
       <br />
+      <br />
+      <br />
       <TechStack />
+
       <br />
     </Stack>
   );

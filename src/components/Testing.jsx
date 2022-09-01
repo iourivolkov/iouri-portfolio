@@ -14,6 +14,8 @@ const Testing = () => {
           textTransform: "uppercase",
           fontWeight: 700,
           fontSize: { xs: "14px", sm: "16px", md: "20px" },
+          textDecoration: "underline 3px solid #ff7575",
+          textUnderlineOffset: 6,
         }}
       >
         ✅ Testing
